@@ -10,14 +10,14 @@ function Board(props) {
 }
 
 function BoardSwitcher(props) {
-  const [selectedBoard, setSelectedBoard ] = useState(0)
+  const [activeBoardNum, setActiveBoardNum ] = useState(0)
   let boards = [];
 
   function handleClick(){
-    setSelectedBoard((selectedBoard+1) % props.numBoards)
+    setActiveBoardNum((activeBoardNum+1) % props.numBoards)
   }
   for (let ii = 0; ii < props.numBoards; ii++) {
-    let isSelected = ii === selectedBoard;
+    let isSelected = ii === activeBoardNum;
     boards.push(<Board index={ii} selected={isSelected} key={ii} />);
   }
 
