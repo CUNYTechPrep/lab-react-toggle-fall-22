@@ -14,7 +14,7 @@ function BoardSwitcher(props) {
   let boards = [];
 
   function handleClick(){
-    setSelectedBoard((selectedBoard+1)%5)
+    setSelectedBoard((selectedBoard+1) % props.numBoards)
   }
   for (let ii = 0; ii < props.numBoards; ii++) {
     let isSelected = ii === selectedBoard;
