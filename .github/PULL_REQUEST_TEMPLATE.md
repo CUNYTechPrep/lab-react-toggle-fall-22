@@ -11,7 +11,7 @@ TITLE: Include your section in the pull request title
 
 ## What section are you in:
 
-- [ ] Tuesday
+- [x] Tuesday
 - [ ] Wednesday
 - [ ] Thursday
 - [ ] Friday 3pm
@@ -19,11 +19,11 @@ TITLE: Include your section in the pull request title
 
 **Is the solution complete?**
 
-[Yes/No]
+[Yes]
 
 **Did you run into any problems?**
 
-[Describe...]
+[Just needed 5 more minutes during the break-out room session to finish the task.]
 
 **Did you collaborate with others on this solution?**
 
