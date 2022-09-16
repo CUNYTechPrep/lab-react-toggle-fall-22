@@ -13,9 +13,9 @@ To start off and understand the desired toggle effect, try changing `let isSelec
 
 ### Tasks
 
--   [ x ] change the app to render 5 boards
--   [ x ] add state to track current selection
--   [ x ] add an event handler for the toggle button
+-   [x] change the app to render 5 boards
+-   [x] add state to track current selection
+-   [x] add an event handler for the toggle button
 
 ### To submit
 
