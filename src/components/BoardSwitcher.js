@@ -17,8 +17,7 @@ function BoardSwitcher(props) {
 	const handleClick = () => {
 		setSelectedIndex((prevSelectedIndex) => {
 			let newSelectedIndex = prevSelectedIndex + 1;
-			if (newSelectedIndex > 4) newSelectedIndex = 0;
-			return newSelectedIndex;
+			return newSelectedIndex % props.numBoards;
 		});
 	};
 
