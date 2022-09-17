@@ -13,6 +13,6 @@ function Counter() {
 
   
   return (<React.StrictMode>
-    <BoardSwitcher numBoards={3} />
+    <BoardSwitcher numBoards={5} />
   </React.StrictMode>)
 }
