@@ -6,6 +6,7 @@ import "./index.css";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BoardSwitcher numBoards={3} />
+    //Editting the constant number here will add the amount of boards there are
+    <BoardSwitcher numBoards={5} />
   </React.StrictMode>
 );
