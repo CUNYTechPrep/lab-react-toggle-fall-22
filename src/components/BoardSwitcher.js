@@ -1,4 +1,6 @@
-import React from "react";
+// import React from "react";
+import React, {useState} from 'react';
+
 
 function Board(props) {
   let className = "board";
@@ -11,17 +13,23 @@ function Board(props) {
 
 function BoardSwitcher(props) {
   let boards = [];
-  for (let ii = 0; ii < props.numBoards; ii++) {
-    let isSelected = ii === 0;
-    boards.push(<Board index={ii} selected={isSelected} key={ii} />);
+  for (let ii = 0; ii < props.numboards; ii++) {
+    let count = ii === 0;
+    boards.push(<Board index={ii} selected={count} key={ii} />);
   }
+
+  
+  const [count, setCount] = useState(0);
 
   return (
     <div>
       <div className="boards">{boards}</div>
-      <button>Toggle</button>
+      <button onClick={() => setCount(count + 1)}>Toggle</button>
+      <p>You clicked {count} time</p>
     </div>
+    //click counter works
   );
+
 }
 
 export default BoardSwitcher;
