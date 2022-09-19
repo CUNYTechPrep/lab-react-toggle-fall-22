@@ -16,7 +16,7 @@ function BoardSwitcher(props) {
 
   const handleBoard = (event) => {    
     setBoard(currBoard + 1);
-    
+
     if(currBoard === props.numBoards-1) { 
       setBoard(0);
     }    
@@ -30,7 +30,7 @@ function BoardSwitcher(props) {
   return (
     <div>
       <div className="boards">{boards}</div>
-      <button onClick={handleBoard}>Toggle: {currBoard}</button>
+      <button onClick={handleBoard}>Toggle</button>
     </div>
   );
 }
