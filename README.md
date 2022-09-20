@@ -33,3 +33,4 @@ To start off and understand the desired toggle effect, try changing `let isSelec
 ## Credit
 
 This lab is based on and a React 18 / ES6 update to the excellent tutorial found at: https://buildwithreact.com/
+
