@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Board(props) {
   let className = "board";
@@ -10,16 +10,25 @@ function Board(props) {
 }
 
 function BoardSwitcher(props) {
+  const [selected, setSelected] = useState(0);
   let boards = [];
-  for (let ii = 0; ii < props.numBoards; ii++) {
-    let isSelected = ii === 0;
-    boards.push(<Board index={ii} selected={isSelected} key={ii} />);
+
+  for (let i = 0; i < props.numBoards; i++) {
+    let isSelected = i === selected;
+    boards.push(<Board index={i} selected={isSelected} key={i} />);
   }
 
   return (
     <div>
       <div className="boards">{boards}</div>
-      <button>Toggle</button>
+      <button
+        onClick={() => {
+          const nextSelect = selected + 1;
+          setSelected(nextSelect >= props.numBoards ? 0 : nextSelect);
+        }}
+      >
+        Toggle
+      </button>
     </div>
   );
 }
