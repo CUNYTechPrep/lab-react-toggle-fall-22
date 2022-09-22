@@ -20,3 +20,7 @@ body {
 .board.selected {
     border-color: #3BA8AA;
 }
+
+.selected {
+    border-color: red;
+}
